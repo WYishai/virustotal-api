@@ -995,6 +995,7 @@ class IntelApi(VtApi):
         """ Programmatically delete notifications via the Intel API.
 
         :param ids: A list of IDs to delete from the notification feed.
+        :param timeout: The amount of time in seconds the request should wait before timing out.
         :returns: The post response.
         """
         if not isinstance(ids, list):
